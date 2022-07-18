@@ -234,8 +234,8 @@ draw_window(const char *display)
 
 	/* bind to control+o */
 	/* TODO: allow this key to be configurable */
-	XGrabKey(main_win.dpy, XKeysymToKeycode(main_win.dpy, XK_o),
-	    ControlMask, DefaultRootWindow(main_win.dpy), False, GrabModeAsync,
+	XGrabKey(main_win.dpy, XKeysymToKeycode(main_win.dpy, XK_grave),
+	    Mod4Mask, DefaultRootWindow(main_win.dpy), False, GrabModeAsync,
 	    GrabModeAsync);
 }
 
